@@ -106,10 +106,10 @@
 00000000 syscall.c
 8010b020 syscalls
 00000000 sysfile.c
-801054c2 argfd
-80105536 fdalloc
-80105904 isdirempty
-80105b4a create
+801054a9 argfd
+8010551d fdalloc
+801058eb isdirempty
+80105b31 create
 00000000 sysproc.c
 00000000 trap.c
 801063cf lidt
@@ -133,7 +133,7 @@
 80106cfb vector87
 80106cf2 vector86
 8010522a safestrcpy
-801056d3 sys_close
+801056ba sys_close
 80107430 vector251
 80106d1f vector91
 80106b15 vector33
@@ -152,7 +152,7 @@
 80106df7 vector115
 80101152 fileread
 80106e36 vector122
-801062a7 sys_sbrk
+8010628e sys_sbrk
 801137e0 ioapicid
 80106fbc vector156
 801073e8 vector245
@@ -175,12 +175,12 @@
 801040ca cpuid
 80101f5e writei
 80106f08 vector141
-8010623a sys_fork
+80106221 sys_fork
 8010c640 bcache
 8010707c vector172
 801073b8 vector241
 80104e4b getcallerpcs
-80105ea6 sys_mkdir
+80105e8d sys_mkdir
 80107448 vector253
 80106a15 vector3
 80106a0c vector2
@@ -204,7 +204,7 @@
 80106adf vector27
 80106e9c vector132
 80107124 vector186
-801055db sys_read
+801055c2 sys_read
 80107298 vector217
 801052b0 fetchint
 80107941 setupkvm
@@ -246,13 +246,13 @@
 801073dc vector244
 80101db5 stati
 80106efc vector140
-80106266 sys_kill
+8010624d sys_kill
 80106b81 vector45
 80106cb3 vector79
 80103e28 pipeclose
 80107328 vector229
 80106fd4 vector158
-80105723 sys_fstat
+8010570a sys_fstat
 80100a69 consolewrite
 80106b4b vector39
 8010704c vector168
@@ -277,7 +277,7 @@
 80106a52 vector10
 80107214 vector206
 80101a6a iunlock
-801062f0 sys_sleep
+801062d7 sys_sleep
 80107460 vector255
 801070e8 vector181
 80106bff vector59
@@ -286,7 +286,7 @@
 80107100 vector183
 80106fe0 vector159
 8010725c vector212
-80105782 sys_link
+80105769 sys_link
 80106b93 vector47
 8010731c vector228
 80106b66 vector42
@@ -302,7 +302,7 @@
 80106f14 vector142
 80106d70 vector100
 801071d8 vector201
-801054a9 sys_hw
+80106393 sys_hw
 80107f8a clearpteu
 80104161 myproc
 80106409 tvinit
@@ -311,7 +311,7 @@
 8010192b idup
 8010737c vector236
 80102d66 kbdintr
-80105d0a sys_open
+80105cf1 sys_open
 80107340 vector231
 80106c3e vector66
 80106af1 vector29
@@ -340,7 +340,7 @@
 80105353 argint
 80100b1e exec
 80106f38 vector145
-80105657 sys_write
+8010563e sys_write
 80104e00 release
 801052ef fetchstr
 80106daf vector107
@@ -377,7 +377,7 @@
 80105380 argptr
 80107280 vector215
 80106fc8 vector157
-80105584 sys_dup
+8010556b sys_dup
 80106ddc vector112
 80100562 panic
 80104967 forkret
@@ -423,7 +423,7 @@
 80107364 vector234
 80103692 log_write
 80104c4e acquiresleep
-80105972 sys_unlink
+80105959 sys_unlink
 80106c1a vector62
 80106acd vector25
 801071b4 vector198
@@ -437,7 +437,7 @@
 80106d0d vector89
 80106d04 vector88
 80106599 trap
-80106381 sys_uptime
+80106368 sys_uptime
 801070d0 vector179
 80106b1e vector34
 80106b8a vector46
@@ -489,7 +489,7 @@
 80106dca vector110
 801071fc vector204
 8010195d ilock
-80106061 sys_exec
+80106048 sys_exec
 80106ed8 vector137
 8010b4c0 _binary_initcode_start
 8010529b swtch
@@ -509,8 +509,8 @@
 80107358 vector233
 8010657d idtinit
 801045c6 exit
-80106259 sys_wait
-80106247 sys_exit
+80106240 sys_wait
+8010622e sys_exit
 801021d8 dirlink
 0000002c _binary_initcode_size
 80106f50 vector147
@@ -527,7 +527,7 @@
 80106a87 vector17
 8010710c vector184
 80105274 strlen
-8010616f sys_pipe
+80106156 sys_pipe
 801015f0 iinit
 80103cb5 picinit
 80107220 vector207
@@ -545,7 +545,7 @@
 801072c8 vector221
 80102ba9 kalloc
 801119e0 devsw
-80106297 sys_getpid
+8010627e sys_getpid
 80106cbc vector80
 80107070 vector171
 80106fa4 vector154
@@ -553,12 +553,12 @@
 80103ce5 pipealloc
 80107370 vector235
 80106d9d vector105
-80105fba sys_chdir
+80105fa1 sys_chdir
 80111a60 icache
 80106f44 vector146
 80107160 vector191
 80106d8b vector103
-80105f17 sys_mknod
+80105efe sys_mknod
 80102f7b lapicstartap
 80107a1b switchuvm
 80104f05 pushcli
