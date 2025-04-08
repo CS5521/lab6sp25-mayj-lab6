@@ -15,6 +15,7 @@ struct {
 static struct proc *initproc;
 
 int nextpid = 1;
+int fork_count = 0;
 extern void forkret(void);
 extern void trapret(void);
 
@@ -180,6 +181,7 @@ growproc(int n)
 int
 fork(void)
 {
+  fork_count++;
   int i, pid;
   struct proc *np;
   struct proc *curproc = myproc();

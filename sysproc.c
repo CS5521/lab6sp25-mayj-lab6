@@ -94,3 +94,9 @@ int sys_hw(void) {
   cprintf("hello world!\n");
   return 0;
 }
+
+extern int fork_count;
+
+int sys_fkc(void) {
+  return fork_count;
+}
