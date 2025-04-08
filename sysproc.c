@@ -95,8 +95,10 @@ int sys_hw(void) {
   return 0;
 }
 
-extern int fork_count;
-
 int sys_fkc(void) {
-  return fork_count;
+  int option;
+
+  if(argint(0, &option) < 0)
+    return -1;
+  return fkc(option);
 }

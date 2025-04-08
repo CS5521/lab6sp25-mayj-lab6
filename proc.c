@@ -498,6 +498,11 @@ kill(int pid)
   return -1;
 }
 
+int fkc(int command) {
+  if (command == 0) fork_count = 0;
+  return fork_count;
+}
+
 //PAGEBREAK: 36
 // Print a process listing to console.  For debugging.
 // Runs when user types ^P on console.
@@ -534,3 +539,5 @@ procdump(void)
     cprintf("\n");
   }
 }
+
+

@@ -59,4 +59,4 @@ struct proc {
 //   expandable heap
 //
 
-extern int fork_count;
+int fork_count;
